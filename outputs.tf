@@ -15,5 +15,5 @@ output "public_dns" {
 }
 
 output "App_Server_URL" {
-  value = "http://${azurerm_public_ip.tf-guide-pip.fqdn}:8200"
+  value = "http://${azurerm_public_ip.tf-guide-pip.fqdn}"
 }
