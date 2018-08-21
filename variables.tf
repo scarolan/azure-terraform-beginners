@@ -7,7 +7,7 @@
 
 variable "resource_group" {
   description = "The name of your Azure Resource Group."
-  default     = "Terraforming-Azure-Beginners"
+  default     = "Terraform-Azure-Beginners"
 }
 
 variable "prefix" {
@@ -16,7 +16,7 @@ variable "prefix" {
 }
 
 variable "hostname" {
-  description = "Virtuam machine hostname. Used for local hostname, DNS, and storage-related names."
+  description = "Virtual machine hostname. Used for local hostname, DNS, and storage-related names."
   default     = "catapp"
 }
 
@@ -77,10 +77,10 @@ variable "image_version" {
 
 variable "admin_username" {
   description = "Administrator user name"
-  default     = "admin"
+  default     = "adminuser"
 }
 
 variable "admin_password" {
   description = "Administrator password"
-  default     = "replace-with-your-password"
+  default     = "Adminpassword123!"
 }
