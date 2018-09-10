@@ -11,6 +11,10 @@ cat << EOM > /var/www/html/index.html
   <body style="background-image: linear-gradient(red,orange,yellow,green,blue,indigo,violet);">
   <center><img src="http://fillmurray.com/800/600"></img></center>
   <marquee><h1>Meow World</h1></marquee>
+
+  Hello samudrala vamshi was here
+  
+
   </body>
 </html>
 EOM
