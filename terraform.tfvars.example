@@ -1,0 +1,6 @@
+# template file to be checked in
+resource_group = "kjetil_resource_group"
+admin_username = "kjehan77"
+admin_password = "Mypassword02!"
+hostname = "catapp_kjh"
+
