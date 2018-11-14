@@ -66,7 +66,7 @@ resource "azurerm_network_security_group" "tf-guide-sg" {
     protocol                   = "Tcp"
     source_port_range          = "*"
     destination_port_range     = "80"
-    source_address_prefix      = "*"
+    source_address_prefix      = "${var.source_network}"
     destination_address_prefix = "*"
   }
 
@@ -78,7 +78,7 @@ resource "azurerm_network_security_group" "tf-guide-sg" {
     protocol                   = "Tcp"
     source_port_range          = "*"
     destination_port_range     = "22"
-    source_address_prefix      = "*"
+    source_address_prefix      = "${var.source_network}"
     destination_address_prefix = "*"
   }
 }

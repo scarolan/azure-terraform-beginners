@@ -84,3 +84,8 @@ variable "admin_password" {
   description = "Administrator password"
   default     = "Adminpassword123!"
 }
+
+variable "source_network" {
+  description = "Allow access from this network prefix. Defaults to '*'."
+  default     = "*"
+}
