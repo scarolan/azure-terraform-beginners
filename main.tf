@@ -1,13 +1,13 @@
 ##############################################################################
-# HashiCorp Beginner's Guide to Using Terraform on Azure
+# * HashiCorp Beginner's Guide to Using Terraform on Azure
 # 
 # This Terraform configuration will create the following:
 #
-# * Resource group with a virtual network and subnet
-# * An Ubuntu Linux server running Apache
+# Resource group with a virtual network and subnet
+# An Ubuntu Linux server running Apache
 
 ##############################################################################
-# Shared infrastructure resources
+# * Shared infrastructure resources
 
 # First we'll create a resource group. In Azure every resource belongs to a 
 # resource group. Think of it as a container to hold all your resources. 
@@ -44,7 +44,7 @@ resource "azurerm_subnet" "subnet" {
 }
 
 ##############################################################################
-# Build an Ubuntu 16.04 Linux VM
+# * Build an Ubuntu 16.04 Linux VM
 #
 # Now that we have a network, we'll deploy an Ubuntu 16.04 Linux server.
 # An Azure Virtual Machine has several components. In this example we'll build
@@ -177,7 +177,7 @@ resource "azurerm_virtual_machine" "site" {
 }
 
 ##############################################################################
-# Azure MySQL Database
+# * Azure MySQL Database
 
 # Terraform can build any type of infrastructure, not just virtual machines. 
 # Azure offers managed MySQL database servers and a whole host of other 
