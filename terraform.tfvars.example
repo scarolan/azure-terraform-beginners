@@ -1,0 +1,10 @@
+resource_group = "terraform-beginners-yourname"
+hostname = "catapp9"
+location = "centralus"
+
+# Use this command to see available regions
+# az account list-locations --output table
+
+# Use this command to make sure the Standard_A0 VM is available
+# If the command returns zero results, choose a different region.
+# az vm list-skus -l centralus --output table | grep Standard_A0 
