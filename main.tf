@@ -9,6 +9,12 @@
 ##############################################################################
 # * Shared infrastructure resources
 
+# The latest version of the Azure provider breaks backward compatibility.
+# TODO: Update this code to use the latest provider.
+provider "azurerm" {
+  version = "=1.44.0"
+}
+
 # First we'll create a resource group. In Azure every resource belongs to a 
 # resource group. Think of it as a container to hold all your resources. 
 # You can find a complete list of Azure resources supported by Terraform here:
